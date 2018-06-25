@@ -16,4 +16,5 @@
 .App-intro {
   font-size: large;
   background: linear-gradient(#185f9b, #91c5f2);
+  padding: 16px;
 }
