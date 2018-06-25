@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Skill from '../Skill';
 import './App.css';
 
 class App extends Component {
@@ -7,12 +7,17 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Luiz Filipe's Portifolio</h1>
+          <h1 className="App-title">Full-Stack Software Developer</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="App-intro">
+          <Skill
+            title="ReactJS"
+            abstract="A simple project to show my skills (Is this web site)."
+            image="https://cdn-images-1.medium.com/max/800/1*XaGxIa_JuHc8YTR5Znv6tg.png"
+            projectLink="https://github.com/vandaimer/my-cover-letter"
+          />
+        </div>
       </div>
     );
   }
