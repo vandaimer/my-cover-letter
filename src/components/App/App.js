@@ -17,6 +17,11 @@ class App extends Component {
             image="https://cdn-images-1.medium.com/max/800/1*XaGxIa_JuHc8YTR5Znv6tg.png"
             projectLink="https://github.com/vandaimer/my-cover-letter"
           />
+          <Skill
+            title="Android"
+            abstract="A simple app to show a list of character of Harry Potter"
+            projectLink="https://github.com/vandaimer/hpcards"
+          />
         </div>
       </div>
     );
