@@ -29,7 +29,7 @@ export const Skill = props => {
       </CardContent>
       <CardActions>
         <Button size="small" color="primary" href={projectLink} disabled={!projectLink}>
-          See on github
+          See the README
         </Button>
       </CardActions>
     </Card>
