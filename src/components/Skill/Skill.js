@@ -48,7 +48,11 @@ Skill.propTypes = {
 
 const styles = {
   card: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
     maxWidth: 345,
+    margin: 10,
   },
   media: {
     height: 0,
