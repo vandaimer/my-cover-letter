@@ -14,7 +14,6 @@ class App extends Component {
           <Skill
             title="ReactJS"
             abstract="A simple project to show my skills (Is this web site)."
-            image="https://cdn-images-1.medium.com/max/800/1*XaGxIa_JuHc8YTR5Znv6tg.png"
             projectLink="https://github.com/vandaimer/my-cover-letter"
           />
           <Skill
