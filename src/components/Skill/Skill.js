@@ -14,11 +14,13 @@ export const Skill = props => {
 
   return(
     <Card className={classes.card}>
-      <CardMedia
-        className={classes.media}
-        image={image}
-        title=""
-      />
+      {image &&
+        <CardMedia
+          className={classes.media}
+          image={image}
+          title=""
+        />
+      }
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2">
           {title}
