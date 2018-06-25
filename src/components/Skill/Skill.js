@@ -42,8 +42,8 @@ Skill.propTypes = {
   classes: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   abstract: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
   projectLink: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 const styles = {
