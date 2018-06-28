@@ -42,7 +42,7 @@ Skill.propTypes = {
   classes: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   abstract: PropTypes.string.isRequired,
-  projectLink: PropTypes.string.isRequired,
+  projectLink: PropTypes.string,
   image: PropTypes.string,
 }
 
