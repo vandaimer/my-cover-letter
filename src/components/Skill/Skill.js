@@ -51,7 +51,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    maxWidth: 345,
+    maxWidth: 400,
+    minWidth: 400,
     margin: 10,
   },
   media: {
