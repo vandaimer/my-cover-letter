@@ -40,8 +40,8 @@ export const Skill = props => {
 
 Skill.propTypes = {
   classes: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  abstract: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  abstract: PropTypes.string,
   projectLink: PropTypes.string,
   image: PropTypes.string,
 }
