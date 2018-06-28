@@ -28,14 +28,15 @@ class App extends Component {
           <h1 className={classes.title}>Luiz Filipe's Portifolio</h1>
           <h1 className={classes.title}>Full-Stack Software Developer</h1>
         </header>
-        <div className={classes.intro}>
+        <div className={classes.container}>
           {projects && projects.map((project, index) => (
-            <Skill
-              key={index}
-              title={project.title}
-              abstract={project.abstract}
-              projectLink={project.link}
-            />
+            <span key={index} className={classes.item}>
+              <Skill
+                title={project.title}
+                abstract={project.abstract}
+                projectLink={project.link}
+              />
+            </span>
           ))}
         </div>
       </div>
@@ -56,13 +57,18 @@ const styles = {
   title: {
     fontSize: '1.5em',
   },
-  intro: {
+  container: {
     fontSize: 'large',
     background: 'linear-gradient(#185f9b, #91c5f2)',
     padding: 16,
     display: 'flex',
-    justifyContent: 'space-evenly',
     flexWrap: 'wrap',
+    alignItems: 'center',
+  },
+  item: {
+    display: 'flex',
+    justifyContent: 'center',
+    flex:'50%',
   }
 };
 
