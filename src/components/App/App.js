@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
+import { storage } from '../../config';
 import Skill from '../Skill';
 import './App.css';
 
 class App extends Component {
+  state = {
+    projects: undefined,
+  }
+
+  componentDidMount(){
+    storage.listenTo('projects', {
+      context: this,
+      asArray: true,
+      then(projects){
+        this.setState({projects});
+      }
+    });
+  }
+
   render() {
+    const { projects } = this.state;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -11,16 +28,14 @@ class App extends Component {
           <h1 className="App-title">Full-Stack Software Developer</h1>
         </header>
         <div className="App-intro">
-          <Skill
-            title="ReactJS"
-            abstract="A simple project to show my skills (Is this web site)."
-            projectLink="https://github.com/vandaimer/my-cover-letter"
-          />
-          <Skill
-            title="Android"
-            abstract="A simple app to show a list of character of Harry Potter"
-            projectLink="https://github.com/vandaimer/hpcards"
-          />
+          {projects && projects.map((project, index) => (
+            <Skill
+              key={index}
+              title={project.title}
+              abstract={project.abstract}
+              projectLink={project.link}
+            />
+          ))}
         </div>
       </div>
     );
